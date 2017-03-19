@@ -3,7 +3,7 @@
                  
      <div class="sidebar-wrapper">
             <div class="profile-container">
-                <img class="profile" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture" />
+                <img class="profile-img" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture" />
                 <h1 class="name">{% if site.name %}{{site.name}}{% else %}Alan Doe{% endif %}</h1>
                 <h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Full Stack Developer{% endif %}</h3>
             </div><!--//profile-container-->
@@ -30,7 +30,7 @@
                     {% endif %}
                     
                     {% if site.linkedin %}
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
                     {% else %}
                     <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/sharath-kumar-87669956" target="_blank">linkedin.com/in/sharathdt</a></li>
                     {% endif %}
@@ -52,6 +52,7 @@
            {% include education.html %}
            {% include language.html %}
            {% include interests.html %}
+           {% include about.html %}
         
             
         </div><!--//sidebar-wrapper-->
