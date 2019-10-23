@@ -1,28 +1,34 @@
+#Update all the sections by editing the data.yml file inside _data folder.
 
+# Site Settings
 title: My Resume
 url: 'http://webjeda.com'
 baseurl: '/online-cv' #change it according to your repository name
+description: A beautiful Jekyll theme for creating resume
+# Style will be applied only after restarting the build or serve. Just choose one of the options.
+theme_skin: blue # blue turquoise green berry orange ceramic
+chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
+
+# Tracker
+analytics: UA-83979019-1
 
 
-# Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
-#style: styles-2
-#style: styles-3
-#style: styles-4
-#style: styles-5
-#style: styles-6
 
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-#Profile information
-name: Alan Doe
-tagline: Full Stack Developer
-pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+# Build settings
+compress-site: yes
 
-#sidebar links
-email: hello@webjeda.com
-phone: 012 345 6789
-website: blog.webjeda.com #do not add http://
-linkedin: alandoe
-github: sharu725
-twitter: '@webjeda'
+encoding: "utf-8"
+compress_html: # - http://jch.penibelst.de/
+  clippings: all
+  ignore:
+    envs: development
 
-#Update all the sections by editing the files inside _includes folder.
+# Development Settings
+port: 4000
+host: 0.0.0.0
+safe: false
